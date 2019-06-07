@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+        
+        <head>
+    
+            <title>Homework week 0</title>
+    
+            <meta charset="UTF-8" />
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            <link rel="stylesheet" href="style.css">
+
+            <h1>Gudruns Livs Kiosk</h1>
+        
+    
+        </head>
+
+    <body>
+
+        <script>
+        // For print out of Gudruns livs kiosk items
+        var gudrunskiosk = fs.readFileSync('data2.json', 'utf-8') //read the data in the JSON file
+
+        var arrayOfFoodItems = JSON.parse(gudrunskiosk); // Parse the data to objects
+
+        arrayOfFoodItems = arrayOfFoodItems.sort(function(item1, item2) {
+        var date1 = new Date(item1.best_before);
+        var date2 = new Date(item2.best_before);
+        if (date1.getTime() == date2.getTime()) {
+            return item2.price - item1.price; // price (descending)
+        }
+        return date1 - date2; // before date (ascending)
+        });
+        console.log(arrayOfFoodItems); // print out all items after sorting
+        </script>
+
+    </body>
+</html>
