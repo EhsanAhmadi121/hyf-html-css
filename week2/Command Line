@@ -24,11 +24,4 @@ How would you use echo command, so that output would be: testanother test?
                                                           $ echo -n "test" > fun
                                                           $ echo "another test" >> fun
                                                           $ cat fun
-                                                          testanother test
-
-
-
-                                                          
-                                                          
-
-
+                                                          testanother test                                                                                                                
