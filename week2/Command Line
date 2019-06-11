@@ -19,7 +19,7 @@ To create multiple nested directories with one mkdir:     $ mkdir -p Hack/Your/F
                                                           $  wc -c fun
 Verify number of characters in the file:                  18 fun
 
-How would you use echo command, so that output would be: testanother test?
+****How would you use echo command, so that output would be: testanother test?
               
                                                           $ echo -n "test" > fun
                                                           $ echo "another test" >> fun
