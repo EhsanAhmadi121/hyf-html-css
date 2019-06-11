@@ -1,1 +1,34 @@
+*How to create a hidden file and how to display it using ls command?
+
+First we make a folder as a name of Week2:                $ mkdir Week2                                                                                                                 
+                                                                                                                  
+To change directory:                                      $ cd Week2   
+
+To create a hidden file:                                  $ echo 'this is a hidden file' > .Test                                                    
+                                                          
+To display the hidden file:                               $ ls -a
+
+**How to create multiple nested directories with one mkdir command?
+
+To create multiple nested directories with one mkdir:     $ mkdir -p Hack/Your/Future/with/Foocoding/And/Have/fun
+
+***Execute following commands terminal:
+
+                                                          $ echo "test" > fun
+                                                          $  echo "another test" >> fun
+                                                          $  wc -c fun
+Verify number of characters in the file:                  18 fun
+
+How would you use echo command, so that output would be: testanother test?
+              
+                                                          $ echo -n "test" > fun
+                                                          $ echo "another test" >> fun
+                                                          $ cat fun
+                                                          testanother test
+
+
+
+                                                          
+                                                          
+
 
